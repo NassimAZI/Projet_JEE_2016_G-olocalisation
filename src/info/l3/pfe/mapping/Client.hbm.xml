@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 avr. 2013 15:13:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="info.l3.pfe.dto.Client" table="client" catalog="GestionDeStock">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property name="nom" type="string">
+			<column name="nom" length="50" not-null="true" />
+		</property>
+		<property name="prenom" type="string">
+			<column name="Prenom" length="50" not-null="true" />
+		</property>
+		<property name="numcartefid" type="string">
+			<column name="NumCarteFid" length="50" />
+		</property>
+		<property name="adresse" type="string">
+			<column name="adresse" length="50" />
+		</property>
+		<property name="numtelephone" type="string">
+			<column name="NumTelephone" length="50" />
+		</property>
+		<property name="solde" type="string">
+			<column name="solde" length="50" />
+		</property>
+		<property name="credit" type="string">
+			<column name="credit" length="50" />
+		</property>
+	</class>
+</hibernate-mapping>

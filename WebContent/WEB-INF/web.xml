@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<session-config>
+		<session-timeout>1</session-timeout>
+   </session-config>
+	<display-name>Projet_Fin_Etudes</display-name>
+	<servlet>
+		<servlet-name>CompteServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.CompteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompteServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CompteServlet</servlet-name>
+		<url-pattern>/CreerCompte</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CompteServlet</servlet-name>
+		<url-pattern>/CompteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ProduitServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.ProduitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProduitServlet</servlet-name>
+		<url-pattern>/ProduitServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FournisseurServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.FournisseurServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FournisseurServlet</servlet-name>
+		<url-pattern>/FournisseurServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ClientServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.ClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientServlet</servlet-name>
+		<url-pattern>/ClientServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UtilisateurServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.UtilisateurServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UtilisateurServlet</servlet-name>
+		<url-pattern>/UtilisateurServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CaisseServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.CaisseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CaisseServlet</servlet-name>
+		<url-pattern>/valider</url-pattern>
+		<url-pattern>/validerVente</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ErreursServlet</servlet-name>
+		<servlet-class>info.l3.pfe.servlets.ErreursServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ErreursServlet</servlet-name>
+		<url-pattern>/erreur</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+    <welcome-file>/Login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

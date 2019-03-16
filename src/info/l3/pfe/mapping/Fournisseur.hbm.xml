@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 avr. 2013 15:13:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="info.l3.pfe.dto.Fournisseur" table="fournisseur"
+		catalog="GestionDeStock">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity" />
+		</id>
+		<property name="nom" type="string">
+			<column name="nom" length="50" />
+		</property>
+		<property name="prenom" type="string">
+			<column name="prenom" length="50" />
+		</property>
+		<property name="adresse" type="string">
+			<column name="adresse" length="50" />
+		</property>
+		<property name="specialite" type="string">
+			<column name="specialite" length="50" />
+		</property>
+		<property name="numtelephone" type="string">
+			<column name="numtelephone" length="50" />
+		</property>
+	</class>
+</hibernate-mapping>
